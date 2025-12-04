@@ -11,6 +11,6 @@ def triangle(n):
         result.append(current_line)
         return result
 last = int(input('Введите конечную строку треугольника Паскаля: '))
-a = triangle(int(level))
+a = triangle(int(last))
 for line in a:
     print(line)
