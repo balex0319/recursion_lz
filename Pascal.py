@@ -10,7 +10,11 @@ def triangle(n):
         b += [1]
         a.append(b)
         return a
-last = int(input('Введите конечную строку треугольника Паскаля: '))
-d = triangle(int(last))
-for line in d:
-    print(line)
+
+def main():
+    last = int(input('Введите конечную строку треугольника Паскаля: '))
+    d = triangle(int(last))
+    for line in d:
+        print(line)
+if __name__ == '__main__':
+    main()
