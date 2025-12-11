@@ -1,5 +1,3 @@
-a = (input('Введите первое число:'))
-b = (input('Введите второе число:'))
 def addition(a, b, c=0):
     if not a and not b and c == 0:
         return ''
@@ -9,11 +7,11 @@ def addition(a, b, c=0):
     c = summa // 10
     x = summa % 10
     return addition(a[:-1], b[:-1], c) + str(x)
-print('Сумма чисел равна: ', addition(a, b))
 
 def main(): 
-    a = input()
-    b = input
+    a = input('Введите первое число:')
+    b = input('Введите второе число:')
+    print('Сумма чисел равна: ', addition(a, b))
     d1 = int()
     d2 = int()
 if __name__ == "__main__":  
